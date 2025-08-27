@@ -50,7 +50,7 @@
             </div>
 
             <div class="flex items-center justify-center w-[120px] h-[52px] bg-[#00a63e] rounded-3xl">
-                <p><span>2</span> Copy</p>
+                <p class=" text-white text-xl"><span>2</span> Copy</p>
             </div>
         </div>
     </nav>
@@ -79,7 +79,7 @@
                 <div class="w-full bg-white p-8 rounded-lg">
                     <div class="flex justify-between mt-3 items-center">
                         <div class="bg-[#41ff6b1a] p-3 rounded-2xl">
-                            <img src="./assets/ambulance.png" alt="" class="w-[36px] h-[36px] ">
+                            <img src="./assets/emergency.png" alt="" class="w-[36px] h-[36px] ">
                         </div>
                         
                         <div>
@@ -87,7 +87,7 @@
                         </div>
                     </div>
                     <div>
-                        <h1 class=" text-2xl font-bold">National Emergency Number</h1>
+                        <h1 class=" text-2xl font-bold inline-block">National Emergency Number</h1>
                         <p class=" text-[#5C5C5C] text-xl mb-3">National Emergency</p>
                         <h1 class="text-3xl font-bold">999</h1>
                         <p class=" mt-5 mb-5"><span class="bg-[#f2eded]  p-3 rounded-2xl">All</span></p> 
@@ -108,18 +108,46 @@
                 <div class="w-full bg-white p-8 rounded-lg">
                     <div class="flex justify-between mt-3 items-center">
                         <div class="bg-[#41ff6b1a] p-3 rounded-2xl">
-                            <img src="./assets/ambulance.png" alt="" class="w-[36px] h-[36px] ">
+                            <img src="./assets/police.png" alt="" class="w-[36px] h-[36px] ">
                         </div>
                         
                         <div>
-                            <i class="fa-regular fa-heart text-[24px] text-[#555855]"></i>
+                            <i class="fa-regular fa-heart text-[24px] text-[#555855]" id="police-heart"></i>
                         </div>
                     </div>
                     <div>
-                        <h1 class=" text-2xl font-bold">Ambulance Service</h1>
-                        <p class=" text-[#5C5C5C] text-xl mb-3">Ambulance</p>
-                        <h1 class="text-3xl font-bold">1994-999999</h1>
+                        <h1 class=" text-2xl font-bold">Police HelpLine Number</h1>
+                        <p class=" text-[#5C5C5C] text-xl mb-3">Police</p>
+                        <h1 class="text-3xl font-bold">999</h1>
                         <p class=" mt-5 mb-5"><span class="bg-[#f2eded]  p-3 rounded-2xl">Health</span></p> 
+                    </div>
+        
+                    <div class="grid grid-cols-2 gap-2">
+                        <button class="w-full bg-white border border-slate-200 flex items-center justify-center gap-2 p-3">
+                          <i class="fa-regular fa-copy"></i> Copy
+                        </button>
+                      
+                        <button class="w-full bg-green-500 rounded-lg flex items-center justify-center gap-2 text-white">
+                          <i class="fa-solid fa-phone-volume"></i> Call
+                        </button>
+                    </div>  
+                </div>
+
+                <div class="w-full bg-white p-8 rounded-lg">
+                    <div class="flex justify-between mt-3 items-center">
+                        <div class="bg-[#41ff6b1a] p-3 rounded-2xl">
+                            <img src="./assets/fire-service.png" alt="" class="w-[36px] h-[36px] ">
+                        </div>
+                        
+                        <div>
+                            <i class="fa-regular fa-heart text-[24px] text-[#555855]" id="fire-service-hear"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class=" text-2xl font-bold">Fire Service Number</h1>
+                        <p class=" text-[#5C5C5C] text-xl mb-3">Fire Service</p>
+                        <h1 class="text-3xl font-bold">999</h1>
+                        <p class=" mt-5 mb-5"><span class="bg-[#f2eded]  p-3 rounded-2xl">Fire</span></p> 
                     </div>
         
                     <div class="grid grid-cols-2 gap-2">
@@ -140,92 +168,7 @@
                         </div>
                         
                         <div>
-                            <i class="fa-regular fa-heart text-[24px] text-[#555855]"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <h1 class=" text-2xl font-bold">Ambulance Service</h1>
-                        <p class=" text-[#5C5C5C] text-xl mb-3">Ambulance</p>
-                        <h1 class="text-3xl font-bold">1994-999999</h1>
-                        <p class=" mt-5 mb-5"><span class="bg-[#f2eded]  p-3 rounded-2xl">Health</span></p> 
-                    </div>
-        
-                    <div class="grid grid-cols-2 gap-2">
-                        <button class="w-full bg-white border border-slate-200 flex items-center justify-center gap-2 p-3">
-                          <i class="fa-regular fa-copy"></i> Copy
-                        </button>
-                      
-                        <button class="w-full bg-green-500 rounded-lg flex items-center justify-center gap-2 text-white">
-                          <i class="fa-solid fa-phone-volume"></i> Call
-                        </button>
-                    </div>  
-                </div>
-
-                <div class="w-full bg-white p-8 rounded-lg">
-                    <div class="flex justify-between mt-3 items-center">
-                        <div class="bg-[#41ff6b1a] p-3 rounded-2xl">
-                            <img src="./assets/ambulance.png" alt="" class="w-[36px] h-[36px] ">
-                        </div>
-                        
-                        <div>
-                            <i class="fa-regular fa-heart text-[24px] text-[#555855]"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <h1 class=" text-2xl font-bold">Ambulance Service</h1>
-                        <p class=" text-[#5C5C5C] text-xl mb-3">Ambulance</p>
-                        <h1 class="text-3xl font-bold">1994-999999</h1>
-                        <p class=" mt-5 mb-5"><span class="bg-[#f2eded]  p-3 rounded-2xl">Health</span></p> 
-                    </div>
-        
-                    <div class="grid grid-cols-2 gap-2">
-                        <button class="w-full bg-white border border-slate-200 flex items-center justify-center gap-2 p-3">
-                          <i class="fa-regular fa-copy"></i> Copy
-                        </button>
-                      
-                        <button class="w-full bg-green-500 rounded-lg flex items-center justify-center gap-2 text-white">
-                          <i class="fa-solid fa-phone-volume"></i> Call
-                        </button>
-                    </div>  
-                </div>
-
-
-                <div class="w-full bg-white p-8 rounded-lg">
-                    <div class="flex justify-between mt-3 items-center">
-                        <div class="bg-[#41ff6b1a] p-3 rounded-2xl">
-                            <img src="./assets/ambulance.png" alt="" class="w-[36px] h-[36px] ">
-                        </div>
-                        
-                        <div>
-                            <i class="fa-regular fa-heart text-[24px] text-[#555855]"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <h1 class=" text-2xl font-bold">Ambulance Service</h1>
-                        <p class=" text-[#5C5C5C] text-xl mb-3">Ambulance</p>
-                        <h1 class="text-3xl font-bold">1994-999999</h1>
-                        <p class=" mt-5 mb-5"><span class="bg-[#f2eded]  p-3 rounded-2xl">Health</span></p> 
-                    </div>
-        
-                    <div class="grid grid-cols-2 gap-2">
-                        <button class="w-full bg-white border border-slate-200 flex items-center justify-center gap-2 p-3">
-                          <i class="fa-regular fa-copy"></i> Copy
-                        </button>
-                      
-                        <button class="w-full bg-green-500 rounded-lg flex items-center justify-center gap-2 text-white">
-                          <i class="fa-solid fa-phone-volume"></i> Call
-                        </button>
-                    </div>  
-                </div>
-
-                <div class="w-full bg-white p-8 rounded-lg">
-                    <div class="flex justify-between mt-3 items-center">
-                        <div class="bg-[#41ff6b1a] p-3 rounded-2xl">
-                            <img src="./assets/ambulance.png" alt="" class="w-[36px] h-[36px] ">
-                        </div>
-                        
-                        <div>
-                            <i class="fa-regular fa-heart text-[24px] text-[#555855]"></i>
+                            <i class="fa-regular fa-heart text-[24px] text-[#555855]" id="ambulance-heart"></i>
                         </div>
                     </div>
                     <div>
@@ -250,18 +193,46 @@
                 <div class="w-full bg-white p-8 rounded-lg">
                     <div class="flex justify-between mt-3 items-center">
                         <div class="bg-[#41ff6b1a] p-3 rounded-2xl">
+                            <img src="./assets/emergency.png" alt="" class="w-[36px] h-[36px] ">
+                        </div>
+                        
+                        <div>
+                            <i class="fa-regular fa-heart text-[24px] text-[#555855]" id="woman-help-heart"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class=" text-2xl font-bold">Woman & Child Helpline</h1>
+                        <p class=" text-[#5C5C5C] text-xl mb-3">Woman & Child Helpline</p>
+                        <h1 class="text-3xl font-bold">109</h1>
+                        <p class=" mt-5 mb-5"><span class="bg-[#f2eded]  p-3 rounded-2xl">Help</span></p> 
+                    </div>
+        
+                    <div class="grid grid-cols-2 gap-2">
+                        <button class="w-full bg-white border border-slate-200 flex items-center justify-center gap-2 p-3">
+                          <i class="fa-regular fa-copy"></i> Copy
+                        </button>
+                      
+                        <button class="w-full bg-green-500 rounded-lg flex items-center justify-center gap-2 text-white">
+                          <i class="fa-solid fa-phone-volume"></i> Call
+                        </button>
+                    </div>  
+                </div>
+
+                <div class="w-full bg-white p-8 rounded-lg">
+                    <div class="flex justify-between mt-3 items-center">
+                        <div class="bg-[#41ff6b1a] p-3 rounded-2xl">
                             <img src="./assets/ambulance.png" alt="" class="w-[36px] h-[36px] ">
                         </div>
                         
                         <div>
-                            <i class="fa-regular fa-heart text-[24px] text-[#555855]"></i>
+                            <i class="fa-regular fa-heart text-[24px] text-[#555855]" id="Corruption-heart"></i>
                         </div>
                     </div>
                     <div>
-                        <h1 class=" text-2xl font-bold">Ambulance Service</h1>
-                        <p class=" text-[#5C5C5C] text-xl mb-3">Ambulance</p>
-                        <h1 class="text-3xl font-bold">1994-999999</h1>
-                        <p class=" mt-5 mb-5"><span class="bg-[#f2eded]  p-3 rounded-2xl">Health</span></p> 
+                        <h1 class=" text-2xl font-bold">Anti-Corruption Helpline</h1>
+                        <p class=" text-[#5C5C5C] text-xl mb-3">Anti-Corruption</p>
+                        <h1 class="text-3xl font-bold">106</h1>
+                        <p class=" mt-5 mb-5"><span class="bg-[#f2eded]  p-3 rounded-2xl">Govt</span></p> 
                     </div>
         
                     <div class="grid grid-cols-2 gap-2">
@@ -283,14 +254,43 @@
                         </div>
                         
                         <div>
-                            <i class="fa-regular fa-heart text-[24px] text-[#555855]"></i>
+                            <i class="fa-regular fa-heart text-[24px] text-[#555855]" id="electricity-heart"></i>
                         </div>
                     </div>
                     <div>
-                        <h1 class=" text-2xl font-bold">Ambulance Service</h1>
-                        <p class=" text-[#5C5C5C] text-xl mb-3">Ambulance</p>
-                        <h1 class="text-3xl font-bold">1994-999999</h1>
-                        <p class=" mt-5 mb-5"><span class="bg-[#f2eded]  p-3 rounded-2xl">Health</span></p> 
+                        <h1 class=" text-2xl font-bold">Electricity Helpline</h1>
+                        <p class=" text-[#5C5C5C] text-xl mb-3">Electricity Outage</p>
+                        <h1 class="text-3xl font-bold">16216</h1>
+                        <p class=" mt-5 mb-5"><span class="bg-[#f2eded]  p-3 rounded-2xl">Electricity</span></p> 
+                    </div>
+        
+                    <div class="grid grid-cols-2 gap-2">
+                        <button class="w-full bg-white border border-slate-200 flex items-center justify-center gap-2 p-3">
+                          <i class="fa-regular fa-copy"></i> Copy
+                        </button>
+                      
+                        <button class="w-full bg-green-500 rounded-lg flex items-center justify-center gap-2 text-white">
+                          <i class="fa-solid fa-phone-volume"></i> Call
+                        </button>
+                    </div>  
+                </div>
+
+
+                <div class="w-full bg-white p-8 rounded-lg">
+                    <div class="flex justify-between mt-3 items-center">
+                        <div class="bg-[#41ff6b1a] p-3 rounded-2xl">
+                            <img src="./assets/ambulance.png" alt="" class="w-[36px] h-[36px] ">
+                        </div>
+                        
+                        <div>
+                            <i class="fa-regular fa-heart text-[24px] text-[#555855]" id="brac-heart"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class=" text-2xl font-bold">Brac Helpline</h1>
+                        <p class=" text-[#5C5C5C] text-xl mb-3">Brac</p>
+                        <h1 class="text-3xl font-bold">16445</h1>
+                        <p class=" mt-5 mb-5"><span class="bg-[#f2eded]  p-3 rounded-2xl">NGO</span></p> 
                     </div>
         
                     <div class="grid grid-cols-2 gap-2">
@@ -311,14 +311,14 @@
                         </div>
                         
                         <div>
-                            <i class="fa-regular fa-heart text-[24px] text-[#555855]"></i>
+                            <i class="fa-regular fa-heart text-[24px] text-[#555855]" id="railway-heart"></i>
                         </div>
                     </div>
                     <div>
-                        <h1 class=" text-2xl font-bold">Ambulance Service</h1>
-                        <p class=" text-[#5C5C5C] text-xl mb-3">Ambulance</p>
-                        <h1 class="text-3xl font-bold">1994-999999</h1>
-                        <p class=" mt-5 mb-5"><span class="bg-[#f2eded]  p-3 rounded-2xl">Health</span></p> 
+                        <h1 class=" text-2xl font-bold">Bangladesh Railway Helpline</h1>
+                        <p class=" text-[#5C5C5C] text-xl mb-3">Bangladesh Railway</p>
+                        <h1 class="text-3xl font-bold">163</h1>
+                        <p class=" mt-5 mb-5"><span class="bg-[#f2eded]  p-3 rounded-2xl">Travel</span></p> 
                     </div>
         
                     <div class="grid grid-cols-2 gap-2">

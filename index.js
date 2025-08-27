@@ -87,7 +87,74 @@ document.getElementById("call-for-railway").addEventListener("click",function(){
     phoneCall("Bangladesh-Railway-txt","Bangladesh-Railway-phone");
 });
 
+//copy && count section
 
+function copyText(id) {
+    let text = document.getElementById(id).innerText;
+
+    navigator.clipboard.writeText(text).then(() => {
+      alert("Number Copied: " + text); 
+    });
+}
+function copyCount(){
+    let copyCount = parseInt(document.getElementById("copy").innerText);
+    copyCount++;
+    document.getElementById("copy").innerText = copyCount;
+}
+
+document.getElementById("National-Emergency-copy").addEventListener("click",function(){
+    copyText("national-emergency-phone");
+    copyCount("National-Emergency-copy");
+})
+
+document.getElementById("police-helpline-copy").addEventListener("click",function(){
+    copyText("police-help-phone");
+    copyCount("police-helpline-copy"); 
+})
+
+
+document.getElementById("Fire-Service-copy").addEventListener("click",function(){
+    copyText("fire-service-phone");
+    copyCount("Fire-Service-copy");
+})
+
+document.getElementById("Ambulance-copy").addEventListener("click",function(){
+    
+    copyText("ambulance-phone");
+    copyCount("Ambulance-copy");
+})
+
+document.getElementById("woman-help-copy").addEventListener("click",function(){
+
+    copyText("woman-help-phone");
+    copyCount("woman-help-copy");
+    
+})
+
+document.getElementById("Anti-Corruption-copy").addEventListener("click",function(){
+    copyText("Anti-Corruption-phone");
+    copyCount("Anti-Corruption-copy");
+    
+})
+
+document.getElementById("Electricity-Outage-copy").addEventListener("click",function(){
+    
+    copyText("Electricity-Outage-phone");
+    copyCount("Electricity-Outage-copy");
+})
+
+document.getElementById("brac-copy").addEventListener("click",function(){
+
+    copyText("brac-phone");
+    copyCount("brac-copy");
+    
+})
+
+document.getElementById("Bangladesh-Railway-copy").addEventListener("click",function(){
+    copyText("Bangladesh-Railway-phone");
+    copyCount("Bangladesh-Railway-copy");
+    
+})
 
 
 

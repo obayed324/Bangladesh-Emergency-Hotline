@@ -28,6 +28,7 @@
 </head>
 
 <body>
+    <!-- Nav Section -->
     <nav class=" flex items-center justify-between mx-w-[1920px] mx-h-[100px] mx-auto p-3">
         <div>
             <div class=" flex gap-1">
@@ -38,8 +39,8 @@
         </div>
         <div class="flex gap-5">
             <div class="flex justify-center items-center bg-[#41ff6b1a] rounded-3xl p-3 gap-2 w-[120px] h-[52px]">
-                <p class=" font-bold">0</p>
-                <img src="./assets/heart.png" alt="" class=" w-[30px] h-[30px] ">
+                <p id="red-heart" class=" font-bold">0</p>
+                <img src="./assets/heart.png" alt="" class=" w-[30px] h-[30px] " >
             </div>
 
 
@@ -74,6 +75,7 @@
     <main class="bg-[#f5fff6]">
         <div class="grid grid-cols-4 gap-3 p-6">
             <div class="left-div grid grid-cols-3 gap-4 col-span-3">
+
                 <div class="w-full bg-white p-8 rounded-lg">
                     <div class="flex justify-between mt-3 items-center">
                         <div class="bg-[#41ff6b1a] p-3 rounded-2xl">
@@ -81,14 +83,14 @@
                         </div>
                         
                         <div>
-                            <i class="fa-regular fa-heart text-[24px] text-[#555855]"></i>
+                            <i class="fa-regular fa-heart text-[24px] text-[#555855]" id="national-emergency-heart"></i>
                         </div>
                     </div>
                     <div>
-                        <h1 class=" text-2xl font-bold">Ambulance Service</h1>
-                        <p class=" text-[#5C5C5C] text-xl mb-3">Ambulance</p>
-                        <h1 class="text-3xl font-bold">1994-999999</h1>
-                        <p class=" mt-5 mb-5"><span class="bg-[#f2eded]  p-3 rounded-2xl">Health</span></p> 
+                        <h1 class=" text-2xl font-bold">National Emergency Number</h1>
+                        <p class=" text-[#5C5C5C] text-xl mb-3">National Emergency</p>
+                        <h1 class="text-3xl font-bold">999</h1>
+                        <p class=" mt-5 mb-5"><span class="bg-[#f2eded]  p-3 rounded-2xl">All</span></p> 
                     </div>
         
                     <div class="grid grid-cols-2 gap-2">
@@ -101,6 +103,7 @@
                         </button>
                     </div>  
                 </div>
+
 
                 <div class="w-full bg-white p-8 rounded-lg">
                     <div class="flex justify-between mt-3 items-center">
@@ -329,6 +332,7 @@
                     </div>  
                 </div>
             </div>
+
 
             <div class="right-div col-span-1 bg-white ">
 
@@ -358,6 +362,8 @@
             
         </div>
     </main>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>

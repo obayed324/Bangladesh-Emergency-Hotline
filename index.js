@@ -70,14 +70,14 @@ function getData(idTxt,idPhone) {
 
 //history generator
 function historyGenerator() {
+
     coin -= 20
-    
     if(coin < 0){
         return;
     }
     else{
         const historyContainer = document.getElementById("history-Container");
-        historyContainer.innerText = "";
+        historyContainer.innerHTML = "";
         for(const data of historyData){
             const div = document.createElement("div")
             div.innerHTML = `
@@ -224,6 +224,12 @@ document.getElementById("Bangladesh-Railway-copy").addEventListener("click",func
     
 })
 
+//Clear Button
 
+document.getElementById("clear-button").addEventListener("click",function(){
+
+    document.getElementById("history-Container").innerHTML = "";
+    
+})
 
 

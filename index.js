@@ -1,3 +1,6 @@
+const historyData = []
+let coin = parseInt(document.getElementById("total-coin").innerText)
+
 //RedHeartFunctionality Or redHeartCount
 function redHeart(id) {
 
@@ -36,10 +39,11 @@ document.getElementById("railway-heart").addEventListener("click",function(){
 });
 
 
-//coin features   total-coin  call-for-national-emergency
+//coin features Or Calling Features
 function phoneCall(idTxt,idPhone) {
     let coin = parseInt(document.getElementById("total-coin").innerText);
     coin -= 20;
+    
     if(coin < 0){
         alert("Insufficient Balance!! For a phone call required minimum 20 coin!")
     }
@@ -49,42 +53,106 @@ function phoneCall(idTxt,idPhone) {
         alert("📞 Calling "+str1+" Service "+str2+"...");
         document.getElementById("total-coin").innerText = coin;
     }
+    
+}
+
+//getting text and phone number for call history
+
+function getData(idTxt,idPhone) {
+    const data ={
+        name:document.getElementById(idTxt).innerText,
+        date:new Date().toLocaleTimeString(),
+        phone:document.getElementById(idPhone).innerText
+    }
+    historyData.push(data);
+    
+}
+
+//history generator
+function historyGenerator() {
+    coin -= 20
+    
+    if(coin < 0){
+        return;
+    }
+    else{
+        const historyContainer = document.getElementById("history-Container");
+        historyContainer.innerText = "";
+        for(const data of historyData){
+            const div = document.createElement("div")
+            div.innerHTML = `
+            <div class=" mb-[16px] flex justify-between bg-[#FAFAFA] p-4 items-center shadow-md rounded-xl">
+                <div class="flex flex-col">
+                    <h3 class=" font-semibold text-sm">${data.name}</h3>
+                    <h3 class="text-[#5C5C5C]">${data.phone}</h3>
+                </div>
+                <div>
+                    <p>${data.date}</p>
+                </div>
+            </div>
+            `
+            historyContainer.appendChild(div)
+            
+        }
+        
+    }
+    
+    
 }
 
 document.getElementById("call-for-national-emergency").addEventListener("click",function(){
     phoneCall("national-emergency-txt","national-emergency-phone");
+    getData("national-emergency-txt","national-emergency-phone");
+    historyGenerator();
 });
+
 
 document.getElementById("call-for-police").addEventListener("click",function(){
     phoneCall("police-help-txt","police-help-phone");
+    getData("police-help-txt","police-help-phone");
+    historyGenerator();
 });
 
 document.getElementById("call-for-fire-service").addEventListener("click",function(){
     phoneCall("fire-service-txt","fire-service-phone");
+    getData("fire-service-txt","fire-service-phone");
+    historyGenerator();
 });
 
 document.getElementById("call-for-ambulance").addEventListener("click",function(){
     phoneCall("ambulance-txt","ambulance-phone");
+    getData("ambulance-txt","ambulance-phone");
+    historyGenerator();
 });
 
 document.getElementById("call-for-woman-help").addEventListener("click",function(){
     phoneCall("woman-help-txt","woman-help-phone");
+    getData("woman-help-txt","woman-help-phone");
+    historyGenerator();
 });
 
 document.getElementById("call-for-Corruption").addEventListener("click",function(){
     phoneCall("Anti-Corruption-txt","Anti-Corruption-phone");
+    getData("Anti-Corruption-txt","Anti-Corruption-phone");
+    historyGenerator();
 });
 
 document.getElementById("call-for-Electricity").addEventListener("click",function(){
     phoneCall("Electricity-Outage-txt","Electricity-Outage-phone");
+    getData("Electricity-Outage-txt","Electricity-Outage-phone");
+    historyGenerator();
 });
 
 document.getElementById("call-for-brac").addEventListener("click",function(){
     phoneCall("brac-txt","brac-phone");
+    getData("brac-txt","brac-phone");
+    historyGenerator();
 });
 
 document.getElementById("call-for-railway").addEventListener("click",function(){
     phoneCall("Bangladesh-Railway-txt","Bangladesh-Railway-phone");
+    getData("Bangladesh-Railway-txt","Bangladesh-Railway-phone");
+    historyGenerator();
 });
 
 //copy && count section

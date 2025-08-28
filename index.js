@@ -229,6 +229,7 @@ document.getElementById("Bangladesh-Railway-copy").addEventListener("click",func
 document.getElementById("clear-button").addEventListener("click",function(){
 
     document.getElementById("history-Container").innerHTML = "";
+    historyData.length = 0;
     
 })
 
